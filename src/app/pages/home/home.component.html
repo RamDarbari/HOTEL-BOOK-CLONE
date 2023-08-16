@@ -1,0 +1,61 @@
+<section>
+    <div class="container">
+        <div class="rows">
+            <div class="paradise-text">
+                <div class="paradise-text-inner">
+                    <div>
+                        <h1 style="font-size: 69px;letter-spacing: 5px; font-weight: 400; color: white;">
+                            A DAY IN PARADISE
+                        </h1>
+                    </div>
+                    <div>
+                        <h2
+                            style="font-family: Lora,serif; color: white; font-style: italic; font-size: 16px; letter-spacing: 1px; font-weight: 400;">
+                            ...a world of seclusion and indulgence
+                        </h2>
+                    </div>
+                    <div style="font-size: 25px; color: white; letter-spacing: 5px;">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="date-picker">
+                <div class="date-picker-inner">
+                    <div class="check-In">
+                        <div>
+                            <mat-form-field>
+                                <mat-label>Check-In Date</mat-label>
+                                <input matInput [matDatepicker]="checkInPicker" [(ngModel)]="checkInDate"
+                                    (dateChange)="onCheckInDateChange($event)">
+                                <mat-datepicker-toggle matSuffix [for]="checkInPicker"></mat-datepicker-toggle>
+                                <mat-datepicker #checkInPicker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="check-out">
+                        <div>
+                            <mat-form-field>
+                                <mat-label>Check-Out Date</mat-label>
+                                <input matInput [matDatepicker]="checkOutPicker" [(ngModel)]="checkOutDate"
+                                    (dateChange)="onCheckOutDateChange($event.value)">
+                                <mat-datepicker-toggle matSuffix [for]="checkOutPicker"></mat-datepicker-toggle>
+                                <mat-datepicker #checkOutPicker></mat-datepicker>
+                            </mat-form-field>
+
+                        </div>
+                    </div>
+                    <div class="members">
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Guests</mat-label>
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                    <button mat-raised-button>SEARCH</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

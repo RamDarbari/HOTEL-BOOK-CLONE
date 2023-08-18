@@ -32,12 +32,13 @@ section {
         .date-picker-inner {
           display: flex;
           justify-content: space-between;
-          width: 60%;
+          width: 80%;
 
           button {
             width: 200px;
             height: 59px;
             border-radius: 50px;
+            color: #fff;
             background-color: #00a3c6;
             border: 1px solid #00a3c6;
             &:hover {

@@ -12,6 +12,11 @@
             <div class="navigations-right">
                 <div class="details">
                     <div class="details-row align-items-center">
+                        <div class="login" *ngIf="!userInLocalStorage && !isAuthenticated" (click)="login()">
+                            <button class="d-flex">
+                                <p>Login</p>
+                            </button>
+                        </div>
                         <div class="number d-flex align-items-center">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             <p>02 123 456 789</p>
@@ -25,7 +30,7 @@
                     <ul>
                         <li>
                             <a>
-                                <p>HOME</p>
+                                <p [routerLink]="['/home']" routerLinkActive="router-link-active">HOME</p>
                             </a>
                         </li>
                         <li>

@@ -12,6 +12,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { StoreModule } from '@ngrx/store';
+import { hotelReducer } from './store/hotels.reducer';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatSelectModule,
+    StoreModule.forFeature('hotel', hotelReducer),
+    // EffectsModule.forFeature([HotelEffects]),
   ],
 })
 export class PagesModule {}

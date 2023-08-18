@@ -27,6 +27,32 @@ header {
             justify-content: flex-end;
             width: 96.5%;
 
+            .login {
+              width: 12%;
+
+              button {
+                width: 100%;
+                letter-spacing: 2px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                height: 50px;
+                padding: 16px 20px;
+                border-radius: 50px;
+                font-size: 14px;
+                border: 1px solid #00a3c6;
+                background-color: #00a3c6;
+                color: white;
+                &:hover {
+                  background-color: #337ab7;
+                  border: 1px solid #337ab7;
+                }
+                p {
+                  margin: 0 auto;
+                }
+              }
+            }
+
             .number {
               letter-spacing: 1.5px;
               padding: 18px 0;

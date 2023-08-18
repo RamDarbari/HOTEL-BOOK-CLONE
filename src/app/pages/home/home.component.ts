@@ -4,10 +4,14 @@ import { DateAdapter } from '@angular/material/core';
 import { HotelsService } from '../services/hotels.service';
 import { Store } from '@ngrx/store';
 import { HotelState } from '../store/hotels.state';
-import { loadHotelsSuccess } from '../store/hotels.actions';
-import { getFilteredHotels } from '../store/hotels.selectors';
+import { applyFilter, loadHotelsSuccess } from '../store/hotels.actions';
+import {
+  getFilteredHotels,
+  getFilteredHotelsWithCriteria,
+} from '../store/hotels.selectors';
 import { hotels } from 'src/app/data';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -27,13 +31,17 @@ export class HomeComponent {
   selectedCity!: string; // Add this property
   selectedGuests!: number; // Add this property
 
+  filteredHotels$: Observable<hotels[]>;
+
   constructor(
     private dateAdapter: DateAdapter<Date>,
-
+    private store: Store,
     private hotelService: HotelsService,
     private _http: HttpClient
   ) {
     this.dateAdapter.setLocale('en-GB'); // Set your desired locale
+    this.hotelService.loadHotels();
+    this.filteredHotels$ = this.store.select(getFilteredHotelsWithCriteria);
   }
 
   onCheckInDateChange(event: MatDatepickerInputEvent<Date>) {
@@ -46,6 +54,13 @@ export class HomeComponent {
   }
 
   onSearch() {
-    this.hotelService.loadHotels();
+    const filterCriteria = {
+      location: this.selectedCity,
+      checkInDate: this.checkInDate,
+      checkOutDate: this.checkOutDate,
+      guests: this.selectedGuests,
+    };
+
+    this.store.dispatch(applyFilter({ filterCriteria }));
   }
 }

@@ -1,6 +1,6 @@
 import { ActionReducer, INIT, UPDATE } from '@ngrx/store';
-import { RootState } from '../root-state';
-import { AuthState } from './auth.state';
+import { RootState } from './auth/root-state';
+import { AuthState } from './auth/store/auth.state';
 
 export const hydrationMetaReducer = (
   reducer: ActionReducer<RootState>
@@ -17,8 +17,15 @@ export const hydrationMetaReducer = (
               user: parsedState.auth.user,
             };
             parsedState.auth = authState;
+            // Exclude the 'hotels' part from the parsed state
+            const nextStateWithoutHotels = {
+              ...parsedState,
+              hotels: undefined,
+            };
+            return nextStateWithoutHotels;
+          } else {
+            return { ...parsedState, auth: undefined, hotels: undefined };
           }
-          return parsedState;
         } catch {
           localStorage.removeItem('state');
         }

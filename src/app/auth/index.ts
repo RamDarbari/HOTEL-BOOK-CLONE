@@ -1,4 +1,4 @@
 import { MetaReducer } from '@ngrx/store';
-import { hydrationMetaReducer } from './store/hydration.reducer';
+import { hydrationMetaReducer } from '../hydration.reducer';
 
 export const metaReducers: MetaReducer[] = [hydrationMetaReducer];

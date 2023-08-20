@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { DateAdapter } from '@angular/material/core';
 import { HotelsService } from '../services/hotels.service';
 import { Store } from '@ngrx/store';
 import { filterHotels, loadHotels } from '../store/hotels.actions';
 import { hotels } from 'src/app/data';
-import { HttpClient } from '@angular/common/http';
+
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   today: Date = new Date();
   minDate: Date = new Date();
   location!: string;
@@ -26,7 +26,8 @@ export class HomeComponent {
   constructor(
     private dateAdapter: DateAdapter<Date>,
     private store: Store,
-    private route: Router
+    private route: Router,
+    private hotel: HotelsService
   ) {
     this.dateAdapter.setLocale('en-GB');
   }
@@ -37,8 +38,10 @@ export class HomeComponent {
   }
 
   onCheckOutDateChange(event: Date) {}
+
   ngOnInit() {
     this.store.dispatch(loadHotels());
+    this.hotel.loadHotels();
   }
 
   onSearch() {

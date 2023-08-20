@@ -1,2 +1,27 @@
-<!-- <div *ngFor="let hotel of filteredHotels">
+<!-- <div class="hotel-list-container">
+    <ng-container *ngIf="filteredHotelsData$ | async as filteredHotelsData">
+        <div *ngFor="let hotel of filteredHotelsData" class="hotel-card">
+            <div>
+                <h3 class="hotel-name">{{ hotel.name }}</h3>
+                <p class="hotel-description">{{ hotel.description }}</p>
+            </div>
+            <div class="hotel-info">
+                <p class="hotel-price">{{ hotel.price | currency }}</p>
+                <p class="hotel-city">{{ hotel.city }}</p>
+            </div>
+            <div class="hotel-details">
+                <p class="hotel-amenities">{{ hotel.amenities }}</p>
+            </div>
+            <div class="button-class">
+                <button class="checkout-button">Check-In</button>
+            </div>
+        </div>
+
+    </ng-container>
 </div> -->
+
+<div *ngFor="let hotel of filteredHotelsData$ | async">
+    <!-- <h3>{{ hotel.name }}</h3>
+        <p>City: {{ hotel.city }}</p> -->
+    <!-- Add more hotel details here -->
+</div>

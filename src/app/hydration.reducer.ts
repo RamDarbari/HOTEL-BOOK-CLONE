@@ -17,7 +17,6 @@ export const hydrationMetaReducer = (
               user: parsedState.auth.user,
             };
             parsedState.auth = authState;
-            // Exclude the 'hotels' part from the parsed state
             const nextStateWithoutHotels = {
               ...parsedState,
               hotels: undefined,

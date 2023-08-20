@@ -7,3 +7,8 @@ export const selectHotels = createSelector(
   selectHotelsFeature,
   (state) => state.filteredHotels
 );
+
+export const selectFilteredHotelsData = createSelector(
+  selectHotelsFeature,
+  (state) => state.filteredHotels
+);

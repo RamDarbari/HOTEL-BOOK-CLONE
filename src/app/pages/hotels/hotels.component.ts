@@ -1,8 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-// import { HotelState } from '../store/hotels.state';
-// import { getFilteredHotelsWithCriteria } from '../store/hotels.selectors';
+import { Observable } from 'rxjs';
 import { hotels } from 'src/app/data';
+import {
+  selectFilteredHotelsData,
+  selectHotels,
+} from '../store/hotels.selectors';
+import { hotelsReducer } from '../store/hotels.reducer';
 
 @Component({
   selector: 'app-hotels',
@@ -10,19 +14,11 @@ import { hotels } from 'src/app/data';
   styleUrls: ['./hotels.component.scss'],
 })
 export class HotelsComponent implements OnInit {
-  // filteredHotels: hotels[] = []; // Initialize an array to hold the filtered hotels
+  filteredHotelsData$: Observable<any> | null = null;
 
-  // constructor(private store: Store<HotelState>) {}
+  constructor(private store: Store) {}
 
   ngOnInit(): void {
-    // // Subscribe to the filtered hotels with criteria selector
-    // this.store.select(getFilteredHotelsWithCriteria).subscribe(
-    //   (filteredHotels) => {
-    //     this.filteredHotels = filteredHotels;
-    //   },
-    //   (error) => {
-    //     console.error(error);
-    //   }
-    // );
+    this.filteredHotelsData$ = this.store.select(selectFilteredHotelsData);
   }
 }

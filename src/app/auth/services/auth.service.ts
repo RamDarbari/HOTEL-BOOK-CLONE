@@ -31,7 +31,7 @@ export class AuthService {
             localStorage.setItem('user', JSON.stringify(response.token));
             alert('User sign-up successfully');
             this.isuserLoggedIn.next(true);
-            this._router.navigate(['/hotels']);
+            this._router.navigate(['/home']);
           })
         );
     } catch (error) {
@@ -57,7 +57,7 @@ export class AuthService {
           alert('User logged in successfully');
           this.isuserLoggedIn.next(true);
           this.isLogginFailed.next(false);
-          this._router.navigate(['./hotels']);
+          this._router.navigate(['./home']);
         } else {
           this.isuserLoggedIn.next(false);
           alert('Invalid credentials');

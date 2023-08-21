@@ -6,15 +6,11 @@
       "name": "Luxury Heights",
       "price": 250,
       "description": "Experience luxury in the heart of the city.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Swimming Pool",
-        "Spa"
-      ],
+      "amenities": ["Free Wi-Fi", "Fitness Center", "Swimming Pool", "Spa"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_1"
     },
     {
       "id": 2,
@@ -22,14 +18,11 @@
       "name": "Urban Oasis",
       "price": 180,
       "description": "Modern comfort in a bustling urban setting.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Restaurant",
-        "Business Center"
-      ],
+      "amenities": ["Free Wi-Fi", "Restaurant", "Business Center"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_2"
     },
     {
       "id": 3,
@@ -37,14 +30,11 @@
       "name": "Sunset View Lodge",
       "price": 220,
       "description": "Enjoy breathtaking views of the sunset over the ocean.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Poolside Bar",
-        "Oceanfront Balcony"
-      ],
+      "amenities": ["Free Wi-Fi", "Poolside Bar", "Oceanfront Balcony"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_3"
     },
     {
       "id": 4,
@@ -52,14 +42,11 @@
       "name": "Hollywood Retreat",
       "price": 190,
       "description": "Experience the glamour of Hollywood in this cozy retreat.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Movie Theater",
-        "Rooftop Lounge"
-      ],
+      "amenities": ["Free Wi-Fi", "Movie Theater", "Rooftop Lounge"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_4"
     },
     {
       "id": 5,
@@ -67,14 +54,11 @@
       "name": "Tropical Paradise Resort",
       "price": 300,
       "description": "Escape to a tropical paradise surrounded by lush gardens.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Private Beach",
-        "Poolside Cabanas"
-      ],
+      "amenities": ["Free Wi-Fi", "Private Beach", "Poolside Cabanas"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_5"
     },
     {
       "id": 6,
@@ -82,14 +66,11 @@
       "name": "Oceanfront Luxury Suites",
       "price": 270,
       "description": "Indulge in luxury with stunning oceanfront views.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Infinity Pool",
-        "Fine Dining"
-      ],
+      "amenities": ["Free Wi-Fi", "Infinity Pool", "Fine Dining"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_6"
     },
     {
       "id": 7,
@@ -97,14 +78,11 @@
       "name": "Golden Gate Inn",
       "price": 200,
       "description": "Stay close to iconic landmarks and enjoy the city's charm.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Garden Courtyard",
-        "Panoramic View"
-      ],
+      "amenities": ["Free Wi-Fi", "Garden Courtyard", "Panoramic View"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_7"
     },
     {
       "id": 8,
@@ -112,14 +90,11 @@
       "name": "Bayview Suites",
       "price": 220,
       "description": "Experience bayfront living in style and comfort.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Private Balcony",
-        "Spa Services"
-      ],
+      "amenities": ["Free Wi-Fi", "Private Balcony", "Spa Services"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_8"
     },
     {
       "id": 9,
@@ -127,14 +102,11 @@
       "name": "Downtown Deluxe Hotel",
       "price": 230,
       "description": "Explore the vibrant city from a luxurious downtown location.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Sky Lounge",
-        "Indoor Pool"
-      ],
+      "amenities": ["Free Wi-Fi", "Sky Lounge", "Indoor Pool"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_9"
     },
     {
       "id": 10,
@@ -142,14 +114,11 @@
       "name": "Cityscape Suites",
       "price": 180,
       "description": "Admire the cityscape from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "amenities": ["Free Wi-Fi", "Fitness Center", "Business Lounge"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_10"
     },
     {
       "id": 11,
@@ -157,612 +126,479 @@
       "name": "Casino Royale Resort",
       "price": 280,
       "description": "Experience the excitement of Las Vegas at this lively resort.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Casino",
-        "Nightclubs",
-        "Pool Parties"
-      ],
+      "amenities": ["Free Wi-Fi", "Casino", "Nightclubs", "Pool Parties"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_11"
     },
     {
       "id": 12,
       "city": "Las Vegas",
-      "name": "Desert Oasis Suites",
-      "price": 240,
-      "description": "Escape to a tranquil desert oasis after a day of fun.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Spa",
-        "Golf Course"
-      ],
+      "name": "Desert Oasis Hotel",
+      "price": 220,
+      "description": "Relax and rejuvenate in the midst of the desert oasis.",
+      "amenities": ["Free Wi-Fi", "Spa", "Outdoor Pool"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_12"
     },
     {
       "id": 13,
       "city": "Orlando",
-      "name": "Magical Castle Hotel",
-      "price": 310,
-      "description": "Stay in a magical castle-themed hotel near the attractions.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Theme Park Shuttle",
-        "Pool with Waterslide"
-      ],
-      "capacity": 2,
-      "beds": 1,
-      "bathrooms": 1
+      "name": "Enchanted Gardens",
+      "price": 190,
+      "description": "Experience the magic of Orlando in this garden-themed hotel.",
+      "amenities": ["Free Wi-Fi", "Themed Pool", "Family-friendly"],
+      "capacity": 4,
+      "beds": 2,
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_13"
     },
     {
       "id": 14,
       "city": "Orlando",
-      "name": "Resort Oasis",
-      "price": 270,
-      "description": "Relax and unwind in a luxurious resort setting.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Golf Course",
-        "Spa"
-      ],
-      "capacity": 2,
-      "beds": 1,
-      "bathrooms": 1
+      "name": "Adventure Resort",
+      "price": 210,
+      "description": "Embark on an adventure in and out of this exciting resort.",
+      "amenities": ["Free Wi-Fi", "Water Park", "Mini Golf"],
+      "capacity": 4,
+      "beds": 2,
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_14"
     },
     {
       "id": 15,
-      "city": "Austin",
-      "name": "Hill Country Retreat",
-      "price": 180,
-      "description": "Escape to the serene beauty of the Texas Hill Country.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Nature Trails",
-        "Outdoor Pool"
-      ],
+      "city": "Honolulu",
+      "name": "Palm Paradise",
+      "price": 320,
+      "description": "Experience the beauty of Honolulu in this palm-filled paradise.",
+      "amenities": ["Free Wi-Fi", "Ocean View", "Beach Access"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_15"
     },
     {
       "id": 16,
-      "city": "Austin",
-      "name": "Urban Loft Suites",
-      "price": 200,
-      "description": "Experience modern urban living in the heart of the city.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Rooftop Lounge",
-        "Fitness Center"
-      ],
+      "city": "Honolulu",
+      "name": "Luau Luxury",
+      "price": 280,
+      "description": "Immerse yourself in Hawaiian culture and luxury at this luau-themed hotel.",
+      "amenities": ["Free Wi-Fi", "Infinity Pool", "Traditional Music"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_16"
     },
     {
       "id": 17,
-      "city": "Seattle",
-      "name": "Seaside Retreat",
-      "price": 240,
-      "description": "Enjoy stunning views of the waterfront from your room.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Private Balcony",
-        "Waterfront Dining"
-      ],
+      "city": "Denver",
+      "name": "Rocky Mountain Lodge",
+      "price": 200,
+      "description": "Experience the beauty of the Rocky Mountains in this cozy lodge.",
+      "amenities": ["Free Wi-Fi", "Mountain Views", "Fireplace"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_17"
     },
     {
       "id": 18,
-      "city": "Seattle",
-      "name": "Skyline Suites",
-      "price": 220,
-      "description": "Admire the city skyline from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "city": "Denver",
+      "name": "Ski Resort Suites",
+      "price": 240,
+      "description": "Hit the slopes and relax in style at this ski resort.",
+      "amenities": ["Free Wi-Fi", "Ski Rentals", "Hot Tub"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_18"
     },
     {
       "id": 19,
-      "city": "Denver",
-      "name": "Mountain View Lodge",
-      "price": 200,
-      "description": "Experience the beauty of the Rocky Mountains up close.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Hot Tub",
-        "Mountain Trails"
-      ],
+      "city": "Seattle",
+      "name": "Skyline Views Hotel",
+      "price": 220,
+      "description": "Enjoy breathtaking views of Seattle's skyline in this modern hotel.",
+      "amenities": ["Free Wi-Fi", "Sky Lounge", "City Tours"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_19"
     },
     {
       "id": 20,
-      "city": "Denver",
-      "name": "Cityscape Suites",
-      "price": 180,
-      "description": "Admire the cityscape from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "city": "Seattle",
+      "name": "Waterfront Retreat",
+      "price": 270,
+      "description": "Relax by the waterfront and explore the beauty of Seattle.",
+      "amenities": ["Free Wi-Fi", "Waterfront Access", "Fire Pit"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_20"
     },
     {
       "id": 21,
-      "city": "Nashville",
-      "name": "Music City Hotel",
-      "price": 210,
-      "description": "Immerse yourself in the vibrant music scene of Nashville.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Live Music Bar",
-        "Rooftop Pool"
-      ],
+      "city": "Boston",
+      "name": "Historic Charm Inn",
+      "price": 190,
+      "description": "Experience the historic charm of Boston in this cozy inn.",
+      "amenities": ["Free Wi-Fi", "Antique Decor", "Central Location"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_21"
     },
     {
       "id": 22,
-      "city": "Nashville",
-      "name": "Southern Comfort Suites",
-      "price": 190,
-      "description": "Experience Southern hospitality in these comfortable suites.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Country-themed Decor",
-        "Lounge Area"
-      ],
+      "city": "Boston",
+      "name": "Modern Loft",
+      "price": 210,
+      "description": "Enjoy modern living in the heart of Boston's vibrant neighborhoods.",
+      "amenities": ["Free Wi-Fi", "Open Layout", "Artistic Decor"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_22"
     },
     {
       "id": 23,
-      "city": "Boston",
-      "name": "Historic Inn",
-      "price": 230,
-      "description": "Stay in a charming historic inn in the heart of Boston.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Antique Furnishings",
-        "Courtyard Garden"
-      ],
+      "city": "New Orleans",
+      "name": "French Quarter Suites",
+      "price": 250,
+      "description": "Immerse yourself in the culture of New Orleans' French Quarter.",
+      "amenities": ["Free Wi-Fi", "Courtyard", "Live Music"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_23"
     },
     {
       "id": 24,
-      "city": "Boston",
-      "name": "Cityscape Suites",
-      "price": 200,
-      "description": "Admire the cityscape from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "city": "New Orleans",
+      "name": "Mardi Gras Mansion",
+      "price": 280,
+      "description": "Experience the extravagance of Mardi Gras in this mansion.",
+      "amenities": ["Free Wi-Fi", "Grand Ballroom", "Courtyard Pool"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_24"
     },
     {
       "id": 25,
-      "city": "Portland",
-      "name": "Pacific Coast Retreat",
-      "price": 250,
-      "description": "Escape to the beautiful Pacific coast and enjoy ocean views.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Beach Access",
-        "Seafood Restaurant"
-      ],
+      "city": "Austin",
+      "name": "Live Music Haven",
+      "price": 220,
+      "description": "Experience Austin's live music scene in this haven.",
+      "amenities": ["Free Wi-Fi", "Live Music Events", "Poolside Bar"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_25"
     },
     {
       "id": 26,
-      "city": "Portland",
-      "name": "Hipster Haven",
+      "city": "Austin",
+      "name": "Urban Loft",
       "price": 190,
-      "description": "Experience the city's hipster culture in these trendy suites.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Artistic Decor",
-        "Cafe"
-      ],
+      "description": "Embrace the urban vibe of Austin in this modern loft.",
+      "amenities": ["Free Wi-Fi", "Open Kitchen", "City Views"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_26"
     },
     {
       "id": 27,
-      "city": "Phoenix",
-      "name": "Desert Oasis Resort",
-      "price": 260,
-      "description": "Experience desert luxury with stunning sunset views.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Spa",
-        "Golf Course"
-      ],
+      "city": "Nashville",
+      "name": "Country Retreat",
+      "price": 230,
+      "description": "Experience the charm of Nashville in this country-themed retreat.",
+      "amenities": ["Free Wi-Fi", "Outdoor Fire Pit", "Country Decor"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_27"
     },
     {
       "id": 28,
-      "city": "Phoenix",
-      "name": "Urban Escape Suites",
-      "price": 220,
-      "description": "Escape the city bustle in these stylish urban suites.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Rooftop Lounge",
-        "Fitness Center"
-      ],
+      "city": "Nashville",
+      "name": "Music City Hotel",
+      "price": 270,
+      "description": "Immerse yourself in Nashville's music scene at this city hotel.",
+      "amenities": ["Free Wi-Fi", "Recording Studio Access", "Rooftop Bar"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_28"
     },
     {
       "id": 29,
-      "city": "San Diego",
-      "name": "Beachfront Paradise",
-      "price": 280,
-      "description": "Experience the ultimate beachfront getaway.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Private Beach Access",
-        "Oceanfront Balcony"
-      ],
+      "city": "Portland",
+      "name": "Nature's Haven",
+      "price": 200,
+      "description": "Escape to nature in the heart of Portland's lush surroundings.",
+      "amenities": ["Free Wi-Fi", "Natural Trails", "Garden Views"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_29"
     },
     {
       "id": 30,
-      "city": "San Diego",
-      "name": "Urban Loft Suites",
-      "price": 230,
-      "description": "Experience modern urban living in the heart of the city.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Rooftop Lounge",
-        "Fitness Center"
-      ],
+      "city": "Portland",
+      "name": "Eclectic Vibes Inn",
+      "price": 240,
+      "description": "Immerse yourself in Portland's eclectic culture at this vibrant inn.",
+      "amenities": ["Free Wi-Fi", "Artistic Decor", "Cultural Events"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_30"
     },
     {
       "id": 31,
-      "city": "Dallas",
-      "name": "Lone Star Lodge",
-      "price": 210,
-      "description": "Embrace Texas charm and hospitality in these rustic lodges.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Western Decor",
-        "Outdoor Pool"
-      ],
+      "city": "San Diego",
+      "name": "Beachfront Paradise",
+      "price": 280,
+      "description": "Experience the ultimate beachfront living in San Diego.",
+      "amenities": ["Free Wi-Fi", "Private Beach Access", "Ocean Views"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_31"
     },
     {
       "id": 32,
-      "city": "Dallas",
-      "name": "Cityscape Suites",
-      "price": 190,
-      "description": "Admire the cityscape from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "city": "San Diego",
+      "name": "Coastal Comfort Suites",
+      "price": 220,
+      "description": "Enjoy comfort and style along the San Diego coastline.",
+      "amenities": ["Free Wi-Fi", "Coastal Views", "Outdoor Pool"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_32"
     },
     {
       "id": 33,
       "city": "Houston",
-      "name": "Space City Inn",
-      "price": 220,
-      "description": "Explore Houston's space-themed attractions from this cozy inn.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Indoor Pool",
-        "Space Shuttle Exhibit"
-      ],
+      "name": "Space City Hotel",
+      "price": 200,
+      "description": "Explore the wonders of space from this Houston hotel.",
+      "amenities": ["Free Wi-Fi", "Space-Themed Decor", "Planetarium"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_33"
     },
     {
       "id": 34,
       "city": "Houston",
-      "name": "Luxury Heights",
-      "price": 240,
-      "description": "Experience luxury in the heart of the city.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Swimming Pool",
-        "Spa"
-      ],
+      "name": "Luxury Skyline View",
+      "price": 230,
+      "description": "Experience luxury living with stunning skyline views.",
+      "amenities": ["Free Wi-Fi", "Floor-to-Ceiling Windows", "Rooftop Pool"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_34"
     },
     {
       "id": 35,
       "city": "Atlanta",
-      "name": "Southern Charm Hotel",
-      "price": 230,
-      "description": "Experience the charm of the South in these elegant suites.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Historic Decor",
-        "Courtyard Garden"
-      ],
+      "name": "Southern Charm Inn",
+      "price": 190,
+      "description": "Experience the warmth of Southern charm in this cozy inn.",
+      "amenities": ["Free Wi-Fi", "Veranda", "Antique Furnishings"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_35"
     },
     {
       "id": 36,
       "city": "Atlanta",
-      "name": "Cityscape Suites",
-      "price": 200,
-      "description": "Admire the cityscape from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "name": "Cityscape Views",
+      "price": 210,
+      "description": "Admire the cityscape of Atlanta from this modern hotel.",
+      "amenities": ["Free Wi-Fi", "Sky Lounge", "Central Location"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_36"
     },
     {
       "id": 37,
-      "city": "New Orleans",
-      "name": "French Quarter Inn",
-      "price": 280,
-      "description": "Experience the lively spirit of New Orleans in the historic French Quarter.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Bourbon Street Access",
-        "Courtyard Garden"
-      ],
+      "city": "Philadelphia",
+      "name": "Historic Elegance",
+      "price": 250,
+      "description": "Experience the historic elegance of Philadelphia in this hotel.",
+      "amenities": ["Free Wi-Fi", "Antique Decor", "Landmark Views"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_37"
     },
     {
       "id": 38,
-      "city": "New Orleans",
-      "name": "Garden District Suites",
-      "price": 240,
-      "description": "Relax in style in the charming Garden District.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Antique Furnishings",
-        "Private Courtyard"
-      ],
+      "city": "Philadelphia",
+      "name": "Urban Retreat",
+      "price": 280,
+      "description": "Escape the city hustle and relax in this urban retreat.",
+      "amenities": ["Free Wi-Fi", "Courtyard Garden", "Spa Services"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_38"
     },
     {
       "id": 39,
-      "city": "Washington, D.C.",
-      "name": "Capital View Hotel",
-      "price": 270,
-      "description": "Enjoy a stunning view of the U.S. Capitol and iconic monuments.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Rooftop Lounge",
-        "Fitness Center"
-      ],
+      "city": "Detroit",
+      "name": "Motor City Hotel",
+      "price": 220,
+      "description": "Experience the spirit of Detroit at this motor city hotel.",
+      "amenities": ["Free Wi-Fi", "Car Museum", "Rooftop Lounge"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_39"
     },
     {
       "id": 40,
-      "city": "Washington, D.C.",
-      "name": "Cityscape Suites",
-      "price": 220,
-      "description": "Admire the cityscape from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "city": "Detroit",
+      "name": "Artistic Escape",
+      "price": 240,
+      "description": "Immerse yourself in art and creativity at this unique escape.",
+      "amenities": ["Free Wi-Fi", "Art Studio Access", "Gallery Tours"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_40"
     },
     {
       "id": 41,
-      "city": "Philadelphia",
-      "name": "Historic District Inn",
-      "price": 230,
-      "description": "Stay in a charming historic inn in Philadelphia's historic district.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Antique Furnishings",
-        "Courtyard Garden"
-      ],
+      "city": "Phoenix",
+      "name": "Desert Mirage",
+      "price": 280,
+      "description": "Experience the beauty of the desert in this mirage-inspired hotel.",
+      "amenities": ["Free Wi-Fi", "Desert Views", "Outdoor Pool"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_41"
     },
     {
       "id": 42,
-      "city": "Philadelphia",
-      "name": "Cityscape Suites",
-      "price": 210,
-      "description": "Admire the cityscape from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "city": "Phoenix",
+      "name": "Southwestern Comfort",
+      "price": 220,
+      "description": "Embrace the southwestern charm and comfort at this hotel.",
+      "amenities": ["Free Wi-Fi", "Southwestern Decor", "Hot Tub"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_42"
     },
     {
       "id": 43,
       "city": "Minneapolis",
-      "name": "Lakeside Retreat",
-      "price": 260,
-      "description": "Experience lakeside tranquility in these cozy suites.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Lake Access",
-        "Nature Trails"
-      ],
+      "name": "Lakeside Serenity",
+      "price": 240,
+      "description": "Experience lakeside tranquility in the heart of Minneapolis.",
+      "amenities": ["Free Wi-Fi", "Lake Views", "Nature Trails"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_43"
     },
     {
       "id": 44,
       "city": "Minneapolis",
-      "name": "Urban Loft Suites",
-      "price": 220,
-      "description": "Experience modern urban living in the heart of the city.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Rooftop Lounge",
-        "Fitness Center"
-      ],
+      "name": "City Lights Condo",
+      "price": 200,
+      "description": "Admire the city lights and enjoy modern living in this condo.",
+      "amenities": ["Free Wi-Fi", "City Views", "Concierge Service"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_44"
     },
     {
       "id": 45,
-      "city": "Detroit",
-      "name": "Motor City Inn",
-      "price": 190,
-      "description": "Embrace the spirit of Detroit's automotive history in these unique suites.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Vintage Decor",
-        "Rooftop Garden"
-      ],
+      "city": "Tampa",
+      "name": "Tropical Getaway",
+      "price": 270,
+      "description": "Escape to a tropical paradise in the heart of Tampa.",
+      "amenities": ["Free Wi-Fi", "Tropical Garden", "Poolside Bar"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_45"
     },
     {
       "id": 46,
-      "city": "Detroit",
-      "name": "Cityscape Suites",
-      "price": 170,
-      "description": "Admire the cityscape from your comfortable suite.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Fitness Center",
-        "Business Lounge"
-      ],
+      "city": "Tampa",
+      "name": "Bayfront Luxury",
+      "price": 220,
+      "description": "Experience luxury living along the Tampa Bay waterfront.",
+      "amenities": ["Free Wi-Fi", "Bay Views", "Private Balcony"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_46"
     },
     {
       "id": 47,
-      "city": "Miami",
-      "name": "Tropical Paradise Resort",
-      "price": 300,
-      "description": "Escape to a tropical paradise surrounded by lush gardens.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Private Beach",
-        "Poolside Cabanas"
-      ],
+      "city": "Raleigh",
+      "name": "Southern Comfort Inn",
+      "price": 190,
+      "description": "Experience the comfort of the South in this cozy inn.",
+      "amenities": ["Free Wi-Fi", "Southern Hospitality", "Veranda"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_47"
     },
     {
       "id": 48,
-      "city": "Miami",
-      "name": "Oceanfront Luxury Suites",
-      "price": 270,
-      "description": "Indulge in luxury with stunning oceanfront views.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Infinity Pool",
-        "Fine Dining"
-      ],
+      "city": "Raleigh",
+      "name": "Modern Urban Oasis",
+      "price": 210,
+      "description": "Escape the city in this modern oasis of tranquility.",
+      "amenities": ["Free Wi-Fi", "Zen Garden", "City Views"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_48"
     },
     {
       "id": 49,
-      "city": "Phoenix",
-      "name": "Desert Oasis Resort",
-      "price": 260,
-      "description": "Experience desert luxury with stunning sunset views.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Spa",
-        "Golf Course"
-      ],
+      "city": "Charlotte",
+      "name": "Uptown Views",
+      "price": 230,
+      "description": "Admire the uptown views and enjoy comfort in this Charlotte hotel.",
+      "amenities": ["Free Wi-Fi", "Sky Lounge", "Central Location"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_49"
     },
     {
       "id": 50,
-      "city": "Phoenix",
-      "name": "Urban Escape Suites",
-      "price": 220,
-      "description": "Escape the city bustle in these stylish urban suites.",
-      "amenities": [
-        "Free Wi-Fi",
-        "Rooftop Lounge",
-        "Fitness Center"
-      ],
+      "city": "Charlotte",
+      "name": "Queen City Suites",
+      "price": 250,
+      "description": "Experience the royal treatment at these Queen City suites.",
+      "amenities": ["Free Wi-Fi", "Luxury Decor", "Spa Services"],
       "capacity": 2,
       "beds": 1,
-      "bathrooms": 1
-    },
-    {
-      "id": 51
-    },
-    {
-      "location": "3",
-      "id": 52
-    },
-    {
-      "location": "11",
-      "id": 53
+      "bathrooms": 1,
+      "image": "URL_TO_IMAGE_50"
     }
   ],
   "users": [

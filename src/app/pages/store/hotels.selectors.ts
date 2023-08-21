@@ -1,14 +1,8 @@
 import { createSelector, createFeatureSelector } from '@ngrx/store';
 import { HotelsState } from './hotels.state';
 
-const selectHotelsFeature = createFeatureSelector<HotelsState>('hotels');
+const selectHotelState = createFeatureSelector<HotelsState>('hotel');
 
-export const selectHotels = createSelector(
-  selectHotelsFeature,
-  (state) => state.filteredHotels
-);
-
-export const selectFilteredHotelsData = createSelector(
-  selectHotelsFeature,
-  (state) => state.filteredHotels
-);
+export const selectHotels = createSelector(selectHotelState, (state) => {
+  return state.hotels;
+});

@@ -3,10 +3,10 @@ import { MatDatepickerInputEvent } from '@angular/material/datepicker';
 import { DateAdapter } from '@angular/material/core';
 import { HotelsService } from '../services/hotels.service';
 import { Store } from '@ngrx/store';
-import { filterHotels, loadHotels } from '../store/hotels.actions';
 import { hotels } from 'src/app/data';
 
 import { Router } from '@angular/router';
+import { filterHotels } from '../store/hotels.actions';
 
 @Component({
   selector: 'app-home',
@@ -40,12 +40,28 @@ export class HomeComponent implements OnInit {
   onCheckOutDateChange(event: Date) {}
 
   ngOnInit() {
-    this.store.dispatch(loadHotels());
+    // this.store.dispatch(loadHotels());
+    //  this.store.dispatch(HotelActions.loadHotels());
     this.hotel.loadHotels();
   }
 
   onSearch() {
-    this.store.dispatch(filterHotels({ city: this.selectedCity }));
+    this.store.dispatch(
+      filterHotels({
+        filters: {
+          city: this.selectedCity,
+          id: 0,
+          image: '',
+          name: '',
+          price: 0,
+          description: '',
+          amenities: [],
+          capacity: 0,
+          beds: 0,
+          bathrooms: 0,
+        },
+      })
+    );
     this.route.navigate(['/hotels']);
   }
 }

@@ -4,11 +4,16 @@ import { initialAuthState } from './auth.state';
 
 export const authReducer = createReducer(
   initialAuthState,
-  on(action.loginSuccess, (state, { user }) => ({
-    ...state,
-    isAuthenticated: true,
-    user,
-  })),
+  on(action.loginSuccess, (state, { user }) => {
+    // Add a debugger statement here
+
+    return {
+      ...state,
+      isAuthenticated: true,
+      user,
+    };
+    debugger;
+  }),
   on(action.loginFailure, (state, { error }) => ({
     ...state,
     isAuthenticated: false,

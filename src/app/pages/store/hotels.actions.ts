@@ -1,12 +1,22 @@
 import { createAction, props } from '@ngrx/store';
 import { hotels } from 'src/app/data';
 
-export const loadHotels = createAction('[Hotels] Load Hotels');
+export const loadHotels = createAction('[Hotel] Load Hotels');
 export const loadHotelsSuccess = createAction(
-  '[Hotels/API] Load Hotels Success',
+  '[Hotel] Load Hotels Success',
   props<{ hotels: hotels[] }>()
 );
+export const loadHotelsFailure = createAction(
+  '[Hotel] Load Hotels Failure',
+  props<{ error: any }>()
+);
+
 export const filterHotels = createAction(
-  '[Hotels] Filter Hotels',
-  props<{ city: string }>()
+  '[Hotel] Filter Hotels',
+  props<{ filters: hotels }>()
+);
+
+export const someErrorAction = createAction(
+  '[Hotel] Some Error',
+  props<{ error: any }>()
 );

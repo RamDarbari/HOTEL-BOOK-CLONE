@@ -1,25 +1,38 @@
-// import { Injectable } from '@angular/core';
-// import { Actions, createEffect, ofType } from '@ngrx/effects';
-// import { filterHotels, loadHotelsSuccess } from './hotels.actions';
-// import { map, switchMap, withLatestFrom } from 'rxjs/operators';
-// import { Store } from '@ngrx/store';
-// import { selectHotels } from './hotels.selectors';
-// import { HotelsState } from './hotels.state';
+import { Injectable } from '@angular/core';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { map, switchMap, catchError } from 'rxjs/operators'; // Import map and catchError
+import {
+  filterHotels,
+  loadHotels,
+  loadHotelsSuccess,
+  someErrorAction,
+} from './hotels.actions';
+import { HotelsService } from '../services/hotels.service';
+import { of } from 'rxjs';
+import { hotels } from 'src/app/data';
 
-// @Injectable()
-// export class HotelsEffects {
-//   constructor(private actions$: Actions, private store: Store<HotelsState>) {}
+@Injectable()
+export class HotelEffects {
+  filterHotels$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(filterHotels),
+      switchMap(({ filters }) =>
+        this.hotelsService.loadHotels().pipe(
+          map((hotels: hotels[]) =>
+            loadHotelsSuccess({
+              hotels: hotels.filter(
+                (hotel: hotels) => hotel.city === filters.city
+              ),
+            })
+          ),
+          catchError((error) => of(someErrorAction({ error })))
+        )
+      )
+    )
+  );
 
-//   filterHotels$ = createEffect(() =>
-//     this.actions$.pipe(
-//       ofType(filterHotels),
-//       withLatestFrom(this.store.select(selectHotels)),
-//       switchMap(([action, hotels]) => {
-//         const filteredHotels = hotels.filter(
-//           (hotel) => hotel.city === action.city
-//         );
-//         return [loadHotelsSuccess({ hotels: filteredHotels })];
-//       })
-//     )
-//   );
-// }
+  constructor(
+    private actions$: Actions,
+    private hotelsService: HotelsService
+  ) {}
+}

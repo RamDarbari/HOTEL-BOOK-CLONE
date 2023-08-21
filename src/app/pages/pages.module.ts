@@ -14,8 +14,10 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
 import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { HotelEffects } from './store/hotels.effects';
 import { hotelsReducer } from './store/hotels.reducer';
-import { StoreRouterConnectingModule } from '@ngrx/router-store';
+// import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 @NgModule({
   declarations: [
@@ -36,8 +38,8 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     MatNativeDateModule,
     MatSelectModule,
     StoreModule.forFeature('hotel', hotelsReducer),
-    StoreRouterConnectingModule.forRoot(),
-    // EffectsModule.forFeature([HotelEffects]),
+    // StoreRouterConnectingModule.forRoot(),
+    EffectsModule.forFeature([HotelEffects]),
   ],
 })
 export class PagesModule {}

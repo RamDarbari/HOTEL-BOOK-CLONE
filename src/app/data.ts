@@ -19,11 +19,12 @@ export interface User {
 
 export interface hotels {
   id: number;
+  image: string;
   city: string;
   name: string;
   price: number;
   description: string;
-  amenities: string;
+  amenities: [];
   capacity: number;
   beds: number;
   bathrooms: number;

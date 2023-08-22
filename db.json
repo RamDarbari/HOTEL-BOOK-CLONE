@@ -10,7 +10,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_1"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_2"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_3"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 4,
@@ -46,7 +46,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_4"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 5,
@@ -58,7 +58,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_5"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 6,
@@ -70,7 +70,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_6"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_7"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_8"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_9"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=55"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_10"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=550"
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_11"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=551"
     },
     {
       "id": 12,
@@ -142,7 +142,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_12"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=552"
     },
     {
       "id": 13,
@@ -154,7 +154,7 @@
       "capacity": 4,
       "beds": 2,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_13"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=553"
     },
     {
       "id": 14,
@@ -166,7 +166,7 @@
       "capacity": 4,
       "beds": 2,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_14"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=554"
     },
     {
       "id": 15,
@@ -178,7 +178,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_15"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=555"
     },
     {
       "id": 16,
@@ -190,7 +190,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_16"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=556"
     },
     {
       "id": 17,
@@ -202,7 +202,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_17"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=557"
     },
     {
       "id": 18,
@@ -214,7 +214,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_18"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=558"
     },
     {
       "id": 19,
@@ -226,7 +226,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_19"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=559"
     },
     {
       "id": 20,
@@ -238,7 +238,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_20"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=550"
     },
     {
       "id": 21,
@@ -250,7 +250,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_21"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=551"
     },
     {
       "id": 22,
@@ -262,7 +262,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_22"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=552"
     },
     {
       "id": 23,
@@ -274,7 +274,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_23"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=553"
     },
     {
       "id": 24,
@@ -286,7 +286,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_24"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=554"
     },
     {
       "id": 25,
@@ -298,7 +298,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_25"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=555"
     },
     {
       "id": 26,
@@ -310,7 +310,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_26"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=556"
     },
     {
       "id": 27,
@@ -322,7 +322,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_27"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=557"
     },
     {
       "id": 28,
@@ -334,7 +334,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_28"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=558"
     },
     {
       "id": 29,
@@ -346,7 +346,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_29"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=559"
     },
     {
       "id": 30,
@@ -358,7 +358,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_30"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=550"
     },
     {
       "id": 31,
@@ -370,7 +370,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_31"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=551"
     },
     {
       "id": 32,
@@ -382,7 +382,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_32"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=552"
     },
     {
       "id": 33,
@@ -394,7 +394,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_33"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=553"
     },
     {
       "id": 34,
@@ -406,7 +406,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_34"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=554"
     },
     {
       "id": 35,
@@ -418,7 +418,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_35"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=555"
     },
     {
       "id": 36,
@@ -430,7 +430,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_36"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=556"
     },
     {
       "id": 37,
@@ -442,7 +442,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_37"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=557"
     },
     {
       "id": 38,
@@ -454,7 +454,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_38"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=558"
     },
     {
       "id": 39,
@@ -466,7 +466,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_39"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=559"
     },
     {
       "id": 40,
@@ -478,7 +478,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_40"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=550"
     },
     {
       "id": 41,
@@ -490,7 +490,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_41"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=551"
     },
     {
       "id": 42,
@@ -502,7 +502,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_42"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=552"
     },
     {
       "id": 43,
@@ -514,7 +514,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_43"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=553"
     },
     {
       "id": 44,
@@ -526,7 +526,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_44"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=554"
     },
     {
       "id": 45,
@@ -538,7 +538,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_45"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=555"
     },
     {
       "id": 46,
@@ -550,7 +550,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_46"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=556"
     },
     {
       "id": 47,
@@ -562,7 +562,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_47"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=557"
     },
     {
       "id": 48,
@@ -574,7 +574,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_48"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=558"
     },
     {
       "id": 49,
@@ -586,7 +586,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_49"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=559"
     },
     {
       "id": 50,
@@ -598,7 +598,7 @@
       "capacity": 2,
       "beds": 1,
       "bathrooms": 1,
-      "image": "URL_TO_IMAGE_50"
+      "image": "https://tbb-prod-apac.imgix.net/attachments/room_type_photos/images/425228/425228/double_room.jpeg?auto=format,compress&fit=crop&crop=entropy&w=300&h=200&q=550"
     }
   ],
   "users": [

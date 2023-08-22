@@ -61,7 +61,7 @@
                             <mat-form-field>
                                 <mat-label>Check-In Date</mat-label>
                                 <input matInput [matDatepicker]="checkInPicker" [(ngModel)]="checkInDate"
-                                    (dateChange)="onCheckInDateChange($event)">
+                                    (dateChange)="onCheckInDateChange($event.value)" [min]="todayDate">
                                 <mat-datepicker-toggle matSuffix [for]="checkInPicker"></mat-datepicker-toggle>
                                 <mat-datepicker #checkInPicker></mat-datepicker>
                             </mat-form-field>
@@ -72,16 +72,17 @@
                             <mat-form-field>
                                 <mat-label>Check-Out Date</mat-label>
                                 <input matInput [matDatepicker]="checkOutPicker" [(ngModel)]="checkOutDate"
-                                    (dateChange)="onCheckOutDateChange($event.value)">
+                                    [min]="minCheckOutDate" [min]="todayDate">
                                 <mat-datepicker-toggle matSuffix [for]="checkOutPicker"></mat-datepicker-toggle>
                                 <mat-datepicker #checkOutPicker></mat-datepicker>
                             </mat-form-field>
                         </div>
                     </div>
+
                     <div class="members">
                         <mat-form-field class="example-full-width">
                             <mat-label>Guests</mat-label>
-                            <input matInput>
+                            <input matInput type="number">
                         </mat-form-field>
                     </div>
                     <button (click)="onSearch()">SEARCH</button>

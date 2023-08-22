@@ -23,7 +23,7 @@
                                 <!-- Data -->
                                 <p><strong>{{ hotel.name }}</strong></p>
                                 <p>City: {{ hotel.city }}</p>
-                                <p>Price: {{ hotel.price | currency:'INR' }}</p>
+                                <p>Price: {{ hotel.price | currency:'USD' }}</p>
                                 <p>Description: {{ hotel.description }}</p>
                                 <ul>
                                     <li *ngFor="let amenity of hotel.amenities">{{ amenity }}</li>
@@ -31,9 +31,9 @@
                                 <p>Capacity: {{ hotel.capacity }} people</p>
                                 <p>Beds: {{ hotel.beds }}</p>
                                 <p>Bathrooms: {{ hotel.bathrooms }}</p>
-                                <!-- <button type="button" class="btn btn-primary btn-sm" (click)="addToCart(hotel)">
-                                    Add to Cart
-                                </button> -->
+                                <button type="button" class="btn btn-primary btn-sm">
+                                    Book Now
+                                </button>
                             </div>
                         </div>
                     </div>

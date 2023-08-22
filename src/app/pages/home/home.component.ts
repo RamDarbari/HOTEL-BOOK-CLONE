@@ -18,10 +18,11 @@ export class HomeComponent implements OnInit {
   minDate: Date = new Date();
   location!: string;
   filteredHotels!: hotels[];
-  checkInDate: Date | undefined;
-  checkOutDate: Date | undefined;
+  checkInDate: Date | null = null;
+  checkOutDate: Date | null = null;
   selectedCity!: string;
   selectedGuests!: number;
+  todayDate = new Date();
 
   constructor(
     private dateAdapter: DateAdapter<Date>,
@@ -31,17 +32,21 @@ export class HomeComponent implements OnInit {
   ) {
     this.dateAdapter.setLocale('en-GB');
   }
-
-  onCheckInDateChange(event: MatDatepickerInputEvent<Date>) {
-    this.checkOutDate = undefined;
-    this.minDate = event.value || this.today;
+  onCheckInDateChange(selectedDate: Date): void {
+    this.checkInDate = selectedDate;
+    this.checkOutDate = null; // Reset the checkout date
   }
 
-  onCheckOutDateChange(event: Date) {}
+  get minCheckOutDate(): Date | null {
+    if (this.checkInDate) {
+      const minDate = new Date(this.checkInDate);
+      minDate.setDate(minDate.getDate() + 1);
+      return minDate;
+    }
+    return null;
+  }
 
   ngOnInit() {
-    // this.store.dispatch(loadHotels());
-    //  this.store.dispatch(HotelActions.loadHotels());
     this.hotel.loadHotels();
   }
 

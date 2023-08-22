@@ -32,9 +32,9 @@ export class HomeComponent implements OnInit {
   ) {
     this.dateAdapter.setLocale('en-GB');
   }
-  onCheckInDateChange(selectedDate: Date): void {
+  onCheckInDateChange(selectedDate: Date) {
     this.checkInDate = selectedDate;
-    this.checkOutDate = null; // Reset the checkout date
+    this.checkOutDate = null;
   }
 
   get minCheckOutDate(): Date | null {
@@ -50,23 +50,36 @@ export class HomeComponent implements OnInit {
     this.hotel.loadHotels();
   }
 
+  isFormValid(): boolean {
+    if (this.selectedCity && this.selectedGuests) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   onSearch() {
-    this.store.dispatch(
-      filterHotels({
-        filters: {
-          city: this.selectedCity,
-          id: 0,
-          image: '',
-          name: '',
-          price: 0,
-          description: '',
-          amenities: [],
-          capacity: 0,
-          beds: 0,
-          bathrooms: 0,
-        },
-      })
-    );
-    this.route.navigate(['/hotels']);
+    if (this.isFormValid()) {
+      this.store.dispatch(
+        filterHotels({
+          filters: {
+            city: this.selectedCity,
+            id: 0,
+            image: '',
+            name: '',
+            price: 0,
+            description: '',
+            amenities: [],
+            capacity: 0,
+            beds: 0,
+            bathrooms: 0,
+          },
+        })
+      );
+      this.route.navigate(['/hotels']);
+    } else {
+      // Show an alert indicating missing details
+      alert('Please fill in all required details before proceeding.');
+    }
   }
 }

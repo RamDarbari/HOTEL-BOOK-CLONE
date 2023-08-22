@@ -12,9 +12,14 @@
             <div class="navigations-right">
                 <div class="details">
                     <div class="details-row align-items-center">
-                        <div class="login" *ngIf="!userInLocalStorage && !isAuthenticated" (click)="login()">
+                        <div class="login-logout" *ngIf="!userInLocalStorage && !isAuthenticated" (click)="login()">
                             <button class="d-flex">
                                 <p>Login</p>
+                            </button>
+                        </div>
+                        <div class="login-logout" *ngIf="isAuthenticated" (click)="logout()">
+                            <button class="d-flex">
+                                <p>Logout</p>
                             </button>
                         </div>
                         <div class="number d-flex align-items-center">

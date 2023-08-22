@@ -27,7 +27,7 @@
                     <div class="cities">
                         <mat-form-field>
                             <mat-label>Cities</mat-label>
-                            <mat-select [(ngModel)]="selectedCity">
+                            <mat-select [(ngModel)]="selectedCity" required>
                                 <mat-option value="New York">New York</mat-option>
                                 <mat-option value="Los Angeles">Los Angeles</mat-option>
                                 <mat-option value="Miami">Miami</mat-option>
@@ -61,7 +61,7 @@
                             <mat-form-field>
                                 <mat-label>Check-In Date</mat-label>
                                 <input matInput [matDatepicker]="checkInPicker" [(ngModel)]="checkInDate"
-                                    (dateChange)="onCheckInDateChange($event.value)" [min]="todayDate">
+                                    (dateChange)="onCheckInDateChange($event.value)" [min]="todayDate" required>
                                 <mat-datepicker-toggle matSuffix [for]="checkInPicker"></mat-datepicker-toggle>
                                 <mat-datepicker #checkInPicker></mat-datepicker>
                             </mat-form-field>
@@ -72,7 +72,7 @@
                             <mat-form-field>
                                 <mat-label>Check-Out Date</mat-label>
                                 <input matInput [matDatepicker]="checkOutPicker" [(ngModel)]="checkOutDate"
-                                    [min]="minCheckOutDate" [min]="todayDate">
+                                    [min]="minCheckOutDate" [min]="todayDate" required>
                                 <mat-datepicker-toggle matSuffix [for]="checkOutPicker"></mat-datepicker-toggle>
                                 <mat-datepicker #checkOutPicker></mat-datepicker>
                             </mat-form-field>
@@ -82,7 +82,7 @@
                     <div class="members">
                         <mat-form-field class="example-full-width">
                             <mat-label>Guests</mat-label>
-                            <input matInput type="number">
+                            <input matInput type="number" [(ngModel)]="selectedGuests" name="selectedGuests" required>
                         </mat-form-field>
                     </div>
                     <button (click)="onSearch()">SEARCH</button>

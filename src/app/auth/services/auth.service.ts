@@ -28,7 +28,7 @@ export class AuthService {
         })
         .pipe(
           tap((response: any) => {
-            localStorage.setItem('user', JSON.stringify(response.token));
+            // localStorage.setItem('user', JSON.stringify(response.token));
             alert('User sign-up successfully');
             this.isuserLoggedIn.next(true);
             this._router.navigate(['/home']);
@@ -53,7 +53,7 @@ export class AuthService {
             u.emailAddress === data.emailAddress && u.password === data.password
         );
         if (user) {
-          localStorage.setItem('user', JSON.stringify(user));
+          // localStorage.setItem('user', JSON.stringify(user));
           alert('User logged in successfully');
           this.isuserLoggedIn.next(true);
           this.isLogginFailed.next(false);
@@ -72,14 +72,14 @@ export class AuthService {
   }
 
   reloadSeller() {
-    if (localStorage.getItem('user')) {
+    if (localStorage.getItem('state')) {
       this.isuserLoggedIn.next(true);
       this._router.navigate(['./admin']);
     }
   }
 
   getCurrentUser(): any {
-    const user = localStorage.getItem('user');
+    const user = localStorage.getItem('state');
 
     if (user) {
       return JSON.parse(user);

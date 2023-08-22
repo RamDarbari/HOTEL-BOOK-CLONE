@@ -1,6 +1,6 @@
 import { Component, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { Subscription } from 'rxjs'; // Import Subscription
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -11,18 +11,25 @@ export class HeaderComponent implements OnDestroy {
   isAuthenticated: boolean = false;
   userInLocalStorage: boolean = false;
 
-  private authSubscription: Subscription | undefined; // Declare authSubscription
+  private authSubscription: Subscription | undefined;
 
   constructor(private _router: Router) {
-    // Check if there's a user in localStorage
-    const user = localStorage.getItem('user');
+    const user = localStorage.getItem('state');
     if (user) {
-      this.userInLocalStorage = true;
+      const parsedUser = JSON.parse(user);
+      const { auth } = parsedUser;
+      this.isAuthenticated = auth.user;
+      console.log(this.isAuthenticated);
     }
   }
 
   login() {
     this._router.navigate(['./auth']);
+  }
+
+  logout() {
+    localStorage.removeItem('state');
+    this.isAuthenticated = false;
   }
 
   ngOnDestroy() {

@@ -1,0 +1,22 @@
+.container {
+  max-width: 960px;
+}
+
+/* Cart */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border: none;
+}
+
+/* Billing address */
+.form-control {
+  width: 100%;
+}
+
+/* Payment */
+.custom-radio input {
+  margin-right: 0.5rem;
+}

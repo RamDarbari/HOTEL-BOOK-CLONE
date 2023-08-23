@@ -1,0 +1,66 @@
+<div class="date-picker" id="date-picker">
+    <div class="date-picker-inner">
+        <div class="cities">
+            <mat-form-field>
+                <mat-label>Cities</mat-label>
+                <mat-select [(ngModel)]="selectedCity" required>
+                    <mat-option value="New York">New York</mat-option>
+                    <mat-option value="Los Angeles">Los Angeles</mat-option>
+                    <mat-option value="Miami">Miami</mat-option>
+                    <mat-option value="San Francisco">San Francisco</mat-option>
+                    <mat-option value="Chicago">Chicago</mat-option>
+                    <mat-option value="Las Vegas">Las Vegas</mat-option>
+                    <mat-option value="Orlando">Orlando</mat-option>
+                    <mat-option value="Austin">Austin</mat-option>
+                    <mat-option value="Seattle">Seattle</mat-option>
+                    <mat-option value="Denver">Denver</mat-option>
+                    <mat-option value="Nashville">Nashville</mat-option>
+                    <mat-option value="Boston">Boston</mat-option>
+                    <mat-option value="Portland">Portland</mat-option>
+                    <mat-option value="Phoenix">Phoenix</mat-option>
+                    <mat-option value="San Diego">San Diego</mat-option>
+                    <mat-option value="Dallas">Dallas</mat-option>
+                    <mat-option value="Houston">Houston</mat-option>
+                    <mat-option value="Atlanta">Atlanta</mat-option>
+                    <mat-option value="New Orleans">New Orleans</mat-option>
+                    <mat-option value="Washington, D.C.">Washington, D.C.</mat-option>
+                    <mat-option value="Philadelphia">Philadelphia</mat-option>
+                    <mat-option value="Minneapolis">Minneapolis</mat-option>
+                    <mat-option value="Detroit">Detroit</mat-option>
+                    <mat-option value="Miami">Miami</mat-option>
+                    <mat-option value="Phoenix">Phoenix</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="check-In">
+            <div>
+                <mat-form-field>
+                    <mat-label>Check-In Date</mat-label>
+                    <input matInput [matDatepicker]="checkInPicker" [(ngModel)]="checkInDate"
+                        (dateChange)="onCheckInDateChange($event.value)" [min]="todayDate" required>
+                    <mat-datepicker-toggle matSuffix [for]="checkInPicker"></mat-datepicker-toggle>
+                    <mat-datepicker #checkInPicker></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="check-out">
+            <div>
+                <mat-form-field>
+                    <mat-label>Check-Out Date</mat-label>
+                    <input matInput [matDatepicker]="checkOutPicker" [(ngModel)]="checkOutDate" [min]="minCheckOutDate"
+                        [min]="todayDate" required>
+                    <mat-datepicker-toggle matSuffix [for]="checkOutPicker"></mat-datepicker-toggle>
+                    <mat-datepicker #checkOutPicker></mat-datepicker>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="members">
+            <mat-form-field class="example-full-width">
+                <mat-label>Guests</mat-label>
+                <input matInput type="number" [(ngModel)]="selectedGuests" name="selectedGuests" required [max]="9"
+                    pattern="[1-9]" />
+            </mat-form-field>
+        </div>
+        <button (click)="onSearch()">SEARCH</button>
+    </div>
+</div>

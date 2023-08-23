@@ -1,4 +1,5 @@
 <section class="h-100 gradient-custom">
+    <app-search-bar></app-search-bar>
     <div class="container py-5" *ngIf="hotels$ | async as hotels">
         <div class="row d-flex justify-content-center my-4">
             <div class="col-md-8">
@@ -18,8 +19,15 @@
                                 <h5 class="card-title"><strong>{{ hotel.name }}</strong></h5>
                                 <p class="card-text">{{ hotel.city }}</p>
                                 <p class="card-text">{{ hotel.description }}</p>
-                                <ul class="amenities-list">
-                                    <li *ngFor="let amenity of hotel.amenities">{{ amenity }}</li>
+                                <ul class="amenities-list d-flex">
+                                    <div style="margin-right: 5%;">
+                                        <li *ngFor="let amenity of hotel.amenities">{{ amenity }}</li>
+                                    </div>
+                                    <div>
+                                        <li>Capacity: {{hotel.capacity}}</li>
+                                        <li>Available Beds: {{hotel.beds}}</li>
+                                        <li>Available bathrooms: {{hotel.bathrooms}} </li>
+                                    </div>
                                 </ul>
                                 <div class="row justify-content-end  mt-3">
                                     <div class="col-md-6 text-right" style="width: 30%;">
@@ -29,7 +37,8 @@
                                                 {{ hotel.price }}</p>
                                             <p>USD/night</p>
                                         </div>
-                                        <button type="button" class="btn btn-primary btn-sm">
+                                        <button type="button" mat-button (click)="openDialog()"
+                                            class="btn btn-primary btn-sm">
                                             Book Now
                                         </button>
                                     </div>

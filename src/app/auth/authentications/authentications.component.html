@@ -1,10 +1,7 @@
 <section>
     <div class="container" *ngIf="!showLogin">
         <form #sellerLoginForm="ngForm" (ngSubmit)="login(sellerLoginForm.value)" class="common-form"
-            style="background:rgba(51,45,45,0.2); height: 80%;">
-
-            <!-- <div class="logo"><a><img src="https://www.bootstrapdash.com/demo/skydash/template/images/logo.svg"
-                alt="Logo"></a></div> -->
+            style="background:rgba(15, 15, 15, 0.719);; height: 60%;">
             <div class="admin">
                 <h2>
                     Welcome
@@ -31,13 +28,8 @@
                 <p><a>Forgot Password?</a></p>
             </div>
 
-            <div class="form-group">
+            <div class="form-group d-flex justify-content-center">
                 <button type="submit" class="form-button">Sign In</button>
-            </div>
-            <div class="form-group d-flex justify-content-evenly" style="width: 200px; margin: 0 auto; height: 10%;">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-google" aria-hidden="true"></i>
             </div>
             <div class="form-group d-flex justify-content-center">
                 <p>Don't have an acoount? <a (click)="onSignUp()" style="color: grey;">Click to Signup</a></p>
@@ -49,9 +41,7 @@
 
     <div class="container" *ngIf="showLogin">
         <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form"
-            style="background:rgba(51,45,45,0.2); height: 90%;">
-            <!-- <div class="logo"><a><img src="https://www.bootstrapdash.com/demo/skydash/template/images/logo.svg"
-                        alt="Logo"></a></div> -->
+            style="background:rgba(15, 15, 15, 0.719);; height: 90%;">
             <div class="admin">
                 <h2>
                     New User
@@ -87,25 +77,18 @@
                     required placeholder="*******">
                 <p class="invalid-input">
                     <span *ngIf="password.invalid && password.touched">Please enter a password</span>
-                    <span *ngIf="password.value && !passwordIsValid(password.value)">
-                        Password must contain at least one uppercase letter, one symbol, and be at least 8 characters
-                        long.
-                    </span>
-                    <span *ngIf="password.value && hasThreeConsecutiveNumbers(password.value)">Password cannot contain a
-                        sequence
-                        of 3 or more numbers</span>
-                </p>
             </div>
 
             <div class="form-group">
                 <label for="Confirmpassword" class="form-label">Confirm Password</label>
                 <input type="password" class="form-input" id="password2" name="confirmPassword" ngModel required
                     placeholder="********">
-                <p class="invalid-input"><span *ngIf="passwordsDoNotMatch()"> Passwords do not match.</span></p>
             </div>
-            <div class="form-group">
+            <div class="form-group d-flex justify-content-center" style="height: 6%;">
                 <button type="submit" class="form-button">Register</button>
-                <p>If you already have a account? <a (click)="onLogin()">Click to Login</a></p>
+            </div>
+            <div class="form-group d-flex justify-content-center">
+                <p>If you already have a account? <a (click)="onLogin()" style="color: grey;">Click to Login</a></p>
             </div>
         </form>
     </div>

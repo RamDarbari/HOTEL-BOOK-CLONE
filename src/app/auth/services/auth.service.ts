@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { signUp, login } from 'src/app/data';
+import { ToastrService } from 'ngx-toastr';
 
 @Injectable({
   providedIn: 'root',
@@ -14,11 +15,15 @@ export class AuthService {
     false
   );
 
-  constructor(private _http: HttpClient, private _router: Router) {}
+  constructor(
+    private _http: HttpClient,
+    private _router: Router,
+    private _toaster: ToastrService
+  ) {}
 
   signup(data: signUp): Observable<any> {
     if (!data.userName || !data.emailAddress || !data.password) {
-      alert('Please fill all the required fields');
+      this._toaster.warning('Please fill all the required fields');
       return of(null);
     }
     try {
@@ -28,22 +33,21 @@ export class AuthService {
         })
         .pipe(
           tap((response: any) => {
-            // localStorage.setItem('user', JSON.stringify(response.token));
-            alert('User sign-up successfully');
+            this._toaster.success('User sign-up successfully');
             this.isuserLoggedIn.next(true);
             this._router.navigate(['/home']);
           })
         );
     } catch (error) {
       console.log('Signup failed', error);
-      alert('An error occurred during Signup. Please try again.');
+      this._toaster.error('An error occurred during Signup. Please try again.');
       return of(null);
     }
   }
 
   login(data: login): Observable<any> {
     if (!data.emailAddress || !data.password) {
-      alert('Please fill all the required fields');
+      this._toaster.warning('Please fill all the required fields');
       return of(null);
     }
     return this._http.get<any>('http://localhost:3000/users').pipe(
@@ -53,19 +57,20 @@ export class AuthService {
             u.emailAddress === data.emailAddress && u.password === data.password
         );
         if (user) {
-          // localStorage.setItem('user', JSON.stringify(user));
-          alert('User logged in successfully');
+          this._toaster.success('User logged in successfully');
           this.isuserLoggedIn.next(true);
           this.isLogginFailed.next(false);
           this._router.navigate(['./home']);
         } else {
           this.isuserLoggedIn.next(false);
-          alert('Invalid credentials');
+          this._toaster.error('Invalid credentials');
         }
       }),
       catchError((error: any) => {
         console.log('API error:', error);
-        alert('An error occurred during login. Please try again.');
+        this._toaster.warning(
+          'An error occurred during login. Please try again.'
+        );
         return of(null);
       })
     );

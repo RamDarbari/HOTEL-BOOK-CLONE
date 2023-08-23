@@ -658,6 +658,23 @@
       "emailAddress": "ramdarbari@gmail.com",
       "password": "Raghav@80",
       "id": 9
+    },
+    {
+      "userName": "Raghav Rallan ",
+      "emailAddress": "flashman2092@gmail.com",
+      "phoneNumber": 9786542130,
+      "password": "1111111111",
+      "confirmPassword": "11111111",
+      "id": 10
+    },
+    {
+      "userName": "Raghav Rallan ",
+      "emailAddress": "flashman2092@gmail.com",
+      "phoneNumber": 9786542130,
+      "password": "2",
+      "confirmPassword": "2",
+      "id": 11
     }
-  ]
+  ],
+  "booked-hotels": []
 }

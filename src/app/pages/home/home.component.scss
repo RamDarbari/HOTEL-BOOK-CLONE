@@ -16,43 +16,6 @@ section {
         left: 0;
         width: 100%;
       }
-
-      .date-picker {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        position: absolute;
-        top: 80%;
-        height: 105px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(15, 15, 15, 0.719);
-
-        .date-picker-inner {
-          display: flex;
-          justify-content: space-between;
-          width: 80%;
-
-          button {
-            width: 200px;
-            height: 59px;
-            border-radius: 50px;
-            color: #fff;
-            background-color: #00a3c6;
-            border: 1px solid #00a3c6;
-            &:hover {
-              background-color: #337ab7;
-              border: 1px solid #337ab7;
-            }
-          }
-        }
-      }
-    }
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
     }
   }
 }

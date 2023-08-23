@@ -5,6 +5,7 @@ import { signUp, login } from 'src/app/data';
 import { AuthService } from '../services/auth.service';
 import { login1, signup } from '../store/auth.actions';
 import { Store } from '@ngrx/store';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-authentications',
@@ -15,7 +16,8 @@ export class AuthenticationsComponent {
   constructor(
     private _admin: AuthService,
     private _router: Router,
-    private store: Store
+    private store: Store,
+    private _toster: ToastrService
   ) {}
   sellerSignUp!: NgForm;
   showLogin = false;
@@ -41,34 +43,36 @@ export class AuthenticationsComponent {
     this.store.dispatch(login1({ loginData: data }));
     this._admin.isLogginFailed.subscribe((isError) => {
       if (isError) {
-        this.loginError = alert('Email or Password is not correct');
+        this.loginError = this._toster.error(
+          'Email or Password is not correct'
+        );
       }
     });
   }
 
-  hasUpperCase(value: string): boolean {
-    return /[A-Z]/.test(value);
-  }
+  // hasUpperCase(value: string): boolean {
+  //   return /[A-Z]/.test(value);
+  // }
 
-  hasSymbol(value: string): boolean {
-    return /[!@#$%^&*()_+]/.test(value);
-  }
+  // hasSymbol(value: string): boolean {
+  //   return /[!@#$%^&*()_+]/.test(value);
+  // }
 
-  hasThreeConsecutiveNumbers(value: string): boolean {
-    return /[0-9]{3,}/.test(value);
-  }
+  // hasThreeConsecutiveNumbers(value: string): boolean {
+  //   return /[0-9]{3,}/.test(value);
+  // }
 
-  passwordIsValid(value: string): boolean {
-    return (
-      this.hasUpperCase(value) &&
-      this.hasSymbol(value) &&
-      !this.hasThreeConsecutiveNumbers(value) &&
-      value.length >= 8
-    );
-  }
-  passwordsDoNotMatch(): boolean {
-    const password = this.sellerSignUp?.value?.password;
-    const password2 = this.sellerSignUp?.value?.password2;
-    return password !== password2;
-  }
+  // passwordIsValid(value: string): boolean {
+  //   return (
+  //     this.hasUpperCase(value) &&
+  //     this.hasSymbol(value) &&
+  //     !this.hasThreeConsecutiveNumbers(value) &&
+  //     value.length >= 8
+  //   );
+  // }
+  // passwordsDoNotMatch(): boolean {
+  //   const password = this.sellerSignUp?.value?.password;
+  //   const password2 = this.sellerSignUp?.value?.password2;
+  //   return password !== password2;
+  // }
 }

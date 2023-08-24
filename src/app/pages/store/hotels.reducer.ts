@@ -1,17 +1,25 @@
 import { createReducer, on } from '@ngrx/store';
 import * as action from './hotels.actions';
-import { HotelsState } from './hotels.state';
-
-const initialState: HotelsState = {
-  hotels: [],
-};
+import { HotelsState, initialHotelsState } from './hotels.state';
 
 export const hotelsReducer = createReducer(
-  initialState,
-  on(action.loadHotelsSuccess, (state, { hotels }) => {
+  initialHotelsState,
+  on(action.loadHotelsSuccess, (state, { allHotels }) => {
     return {
       ...state,
-      hotels,
+      allHotels,
     };
-  })
+  }),
+  on(
+    action.setFilterAndDates,
+    (state, { city, guests, checkInDate, checkOutDate }) => {
+      return {
+        ...state,
+        selectedCity: city,
+        selectedGuests: guests,
+        checkInDate,
+        checkOutDate,
+      };
+    }
+  )
 );

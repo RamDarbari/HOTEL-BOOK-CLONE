@@ -5,6 +5,7 @@ import {
   filterHotels,
   loadHotels,
   loadHotelsSuccess,
+  setFilterAndDates,
   someErrorAction,
 } from './hotels.actions';
 import { HotelsService } from '../services/hotels.service';
@@ -20,7 +21,7 @@ export class HotelEffects {
         this.hotelsService.loadHotels().pipe(
           map((hotels: hotels[]) =>
             loadHotelsSuccess({
-              hotels: hotels.filter(
+              allHotels: hotels.filter(
                 (hotel: hotels) => hotel.city === filters.city
               ),
             })

@@ -5,7 +5,10 @@ import { Store } from '@ngrx/store';
 import { ToastrService } from 'ngx-toastr';
 import { hotels } from 'src/app/data';
 import { HotelsService } from 'src/app/pages/services/hotels.service';
-import { filterHotels } from 'src/app/pages/store/hotels.actions';
+import {
+  filterHotels,
+  setFilterAndDates,
+} from 'src/app/pages/store/hotels.actions';
 
 @Component({
   selector: 'app-search-bar',
@@ -65,9 +68,11 @@ export class SearchBarComponent implements OnInit {
         this.store.dispatch(
           filterHotels({
             filters: {
-              city: this.selectedCity,
+              checkInDate: this.checkInDate,
+              checkOutDate: this.checkOutDate,
               id: 0,
               image: '',
+              city: this.selectedCity,
               name: '',
               price: 0,
               description: '',
@@ -76,6 +81,14 @@ export class SearchBarComponent implements OnInit {
               beds: 0,
               bathrooms: 0,
             },
+          })
+        );
+        this.store.dispatch(
+          setFilterAndDates({
+            city: this.selectedCity,
+            guests: this.selectedGuests,
+            checkInDate: this.checkInDate,
+            checkOutDate: this.checkOutDate,
           })
         );
         this.route.navigate(['/hotels']);

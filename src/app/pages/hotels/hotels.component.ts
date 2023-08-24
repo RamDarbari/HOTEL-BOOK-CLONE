@@ -15,14 +15,31 @@ import { ModalComponent } from 'src/app/reusable-component/modal/modal.component
 })
 export class HotelsComponent {
   hotels$: Observable<hotels[]>;
+  selectedHotelName!: string;
+  selectedHotelPrice!: number;
+  selectedCheckInDate!: number;
+  selectedCheckOutDate!: number;
 
   constructor(private store: Store<HotelsState>, public dialog: MatDialog) {
     this.hotels$ = this.store.pipe(select(selectHotels));
   }
 
-  openDialog() {
+  openDialog(hotel: hotels) {
+    const selectedCheckInDate = hotel.checkInDate
+      ? new Date(hotel.checkInDate)
+      : null;
+    const selectedCheckOutDate = hotel.checkOutDate
+      ? new Date(hotel.checkOutDate)
+      : null;
+
     const dialogRef = this.dialog.open(ModalComponent, {
       width: '1050px',
+      data: {
+        selectedHotelName: hotel.name,
+        selectedHotelPrice: hotel.price,
+        selectedCheckInDate: selectedCheckInDate,
+        selectedCheckOutDate: selectedCheckOutDate,
+      },
     });
   }
 }

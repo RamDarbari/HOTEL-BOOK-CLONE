@@ -18,6 +18,8 @@ export interface User {
 }
 
 export interface hotels {
+  checkInDate: Date | null;
+  checkOutDate: Date | null;
   id: number;
   image: string;
   city: string;
@@ -28,4 +30,19 @@ export interface hotels {
   capacity: number;
   beds: number;
   bathrooms: number;
+}
+
+export interface bookedhotelsData {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phoneNumber: string;
+  checkInDate: Date | null;
+  checkOutDate: Date | null;
+  city: string;
+  name: string;
+  price: number;
+  cardHolderName: string;
+  cardNumber: number;
+  cardCvv: number;
 }

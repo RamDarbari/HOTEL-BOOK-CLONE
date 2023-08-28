@@ -6,6 +6,11 @@ import { AuthenticationsComponent } from './authentications/authentications.comp
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+import { StoreModule } from '@ngrx/store';
+import { hydrationMetaReducer } from '../hydration.reducer';
+import { authReducer } from './store/auth.reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { AuthEffects } from './store/auth.effects';
 
 @NgModule({
   declarations: [AuthenticationsComponent],
@@ -15,6 +20,11 @@ import { RouterModule } from '@angular/router';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    StoreModule.forRoot(
+      { auth: authReducer },
+      { metaReducers: [hydrationMetaReducer] }
+    ),
+    EffectsModule.forRoot([AuthEffects]),
   ],
 })
 export class AuthModule {}

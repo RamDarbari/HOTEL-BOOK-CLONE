@@ -14,6 +14,7 @@ import { authReducer } from './auth/store/auth.reducers';
 import { AuthEffects } from './auth/store/auth.effects';
 import { hydrationMetaReducer } from './hydration.reducer';
 import { ToastrModule } from 'ngx-toastr';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,11 +24,7 @@ import { ToastrModule } from 'ngx-toastr';
     NgbModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    StoreModule.forRoot(
-      { auth: authReducer },
-      { metaReducers: [hydrationMetaReducer] }
-    ),
-    EffectsModule.forRoot([AuthEffects]),
+    AuthModule,
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     ToastrModule.forRoot({
       timeOut: 3000,

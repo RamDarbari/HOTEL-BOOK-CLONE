@@ -1,7 +1,7 @@
 import { hotels } from 'src/app/data';
 
 export interface HotelsState {
-  allHotels: hotels[];
+  hotels: hotels[];
   selectedCity: string | null;
   selectedGuests: number | null;
   checkInDate: Date | null;
@@ -10,7 +10,7 @@ export interface HotelsState {
 
 // Initial state
 export const initialHotelsState: HotelsState = {
-  allHotels: [],
+  hotels: [],
   selectedCity: null,
   selectedGuests: null,
   checkInDate: null,

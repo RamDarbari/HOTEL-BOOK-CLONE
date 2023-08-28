@@ -4,7 +4,7 @@ import { hotels } from 'src/app/data';
 export const loadHotels = createAction('[Hotel] Load Hotels');
 export const loadHotelsSuccess = createAction(
   '[Hotel] Load Hotels Success',
-  props<{ allHotels: hotels[] }>()
+  props<{ hotels: hotels[] }>()
 );
 export const loadHotelsFailure = createAction(
   '[Hotel] Load Hotels Failure',

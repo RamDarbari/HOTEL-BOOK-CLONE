@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { PagesRoutingModule } from './pages-routing.module';
 import { HomeComponent } from './home/home.component';
 import { HotelsComponent } from './hotels/hotels.component';
-import { CheckoutComponent } from './checkout/checkout.component';
 import { RoutesComponent } from './routes/routes.component';
 import { LayoutsModule } from '../layouts/layouts.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,12 +19,7 @@ import { ModalComponent } from '../reusable-component/modal/modal.component';
 // import { StoreRouterConnectingModule } from '@ngrx/router-store';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    HotelsComponent,
-    CheckoutComponent,
-    RoutesComponent,
-  ],
+  declarations: [HomeComponent, HotelsComponent, RoutesComponent],
   imports: [
     CommonModule,
     FormsModule,

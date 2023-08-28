@@ -9,7 +9,7 @@ export interface signUp {
 export interface login {
   // username: string;
   emailAddress: string;
-  password: number;
+  password: string;
 }
 
 export interface User {
@@ -36,7 +36,7 @@ export interface bookedhotelsData {
   firstName: string;
   lastName: string;
   email: string;
-  phoneNumber: string;
+  phoneNumber: number;
   checkInDate: Date | null;
   checkOutDate: Date | null;
   city: string;

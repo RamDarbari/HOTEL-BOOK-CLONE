@@ -10,9 +10,10 @@
                 <li class="list-group-item d-flex justify-content-between lh-condensed">
                     <div>
                         <h2 class="my-0">{{ selectedHotelName }}</h2>
+                        <!-- <h3 class="my-0">city: {{selectedCity}} </h3> -->
                         <small class="text-muted">Price: {{ selectedHotelPrice }}</small>
-                        <p><strong>Check-in Date:</strong> {{ selectedCheckInDate | date:'medium' }}</p>
-                        <p><strong>Check-out Date:</strong> {{ selectedCheckOutDate | date:'medium' }}</p>
+                        <p><strong>Check-in Date:</strong> {{ (selectedCheckInDate$ | async) | date:'medium' }}</p>
+                        <p><strong>Check-out Date:</strong> {{ (selectedCheckOutDate$ | async) | date:'medium' }}</p>
 
                     </div>
                 </li>

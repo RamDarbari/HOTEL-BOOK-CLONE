@@ -21,7 +21,7 @@ export class HotelEffects {
         this.hotelsService.loadHotels().pipe(
           map((hotels: hotels[]) =>
             loadHotelsSuccess({
-              allHotels: hotels.filter(
+              hotels: hotels.filter(
                 (hotel: hotels) => hotel.city === filters.city
               ),
             })

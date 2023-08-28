@@ -4,10 +4,10 @@ import { HotelsState, initialHotelsState } from './hotels.state';
 
 export const hotelsReducer = createReducer(
   initialHotelsState,
-  on(action.loadHotelsSuccess, (state, { allHotels }) => {
+  on(action.loadHotelsSuccess, (state, { hotels }) => {
     return {
       ...state,
-      allHotels,
+      hotels,
     };
   }),
   on(

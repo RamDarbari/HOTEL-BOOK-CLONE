@@ -986,6 +986,21 @@
       "cardNumber": 11111111111111,
       "cardCvv": 1110,
       "id": 8
+    },
+    {
+      "firstName": "Raghav",
+      "lastName": "Rallan",
+      "email": "flashman2092@gmail.com",
+      "phoneNumber": "08198042151",
+      "name": "Casino Royale Resort",
+      "price": 280,
+      "checkInDate": "2023-08-24T18:30:00.000Z",
+      "checkOutDate": "2023-08-30T18:30:00.000Z",
+      "city": "",
+      "cardHolderName": "",
+      "cardNumber": 0,
+      "cardCvv": 0,
+      "id": 9
     }
   ]
 }

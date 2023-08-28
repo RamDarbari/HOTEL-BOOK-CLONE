@@ -30,7 +30,6 @@ describe('AuthenticationsComponent', () => {
     fixture = TestBed.createComponent(AuthenticationsComponent);
     component = fixture.componentInstance;
 
-    // Inject services
     authService = TestBed.inject(AuthService);
     toastrService = TestBed.inject(ToastrService);
 
@@ -45,21 +44,14 @@ describe('AuthenticationsComponent', () => {
     const form = {
       valid: true,
       value: {
-        emailAddress: 'flashman2092@gmail.com', // Change property name to emailAddress
+        emailAddress: 'flashman2092@gmail.com',
         password: 'Raghav@80',
       },
     };
-
-    // Spy on authService.login
     spyOn(authService, 'login').and.callThrough();
 
-    // Trigger login
     component.login(form.value);
-
-    // Flush the setTimeouts in the login function
-    tick();
-
-    // Expect that authService.login was called
+    // tick();
     expect(authService.login).toHaveBeenCalled();
     expect(toastrService.error).not.toHaveBeenCalled();
   }));

@@ -24,7 +24,12 @@ import { AuthModule } from './auth/auth.module';
     NgbModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AuthModule,
+    // AuthModule,
+    StoreModule.forRoot(
+      { auth: authReducer },
+      { metaReducers: [hydrationMetaReducer] }
+    ),
+    EffectsModule.forRoot([AuthEffects]),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     ToastrModule.forRoot({
       timeOut: 3000,

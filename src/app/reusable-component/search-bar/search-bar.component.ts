@@ -91,7 +91,7 @@ export class SearchBarComponent implements OnInit {
             checkOutDate: this.checkOutDate,
           })
         );
-        this.route.navigate(['/hotels']);
+        // this.route.navigate(['/hotels']);
       } else {
         this.selectedGuests = 1;
         this._toaster.error('Please enter a number of guests between 1 and 9.');

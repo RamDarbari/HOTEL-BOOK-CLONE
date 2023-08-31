@@ -20,11 +20,6 @@ import { AuthEffects } from './store/auth.effects';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    StoreModule.forRoot(
-      { auth: authReducer },
-      { metaReducers: [hydrationMetaReducer] }
-    ),
-    EffectsModule.forRoot([AuthEffects]),
   ],
 })
 export class AuthModule {}

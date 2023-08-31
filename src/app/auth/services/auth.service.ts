@@ -79,7 +79,7 @@ export class AuthService {
   reloadSeller() {
     if (localStorage.getItem('state')) {
       this.isuserLoggedIn.next(true);
-      this._router.navigate(['./admin']);
+      this._router.navigate(['./home']);
     }
   }
 

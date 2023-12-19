@@ -1001,6 +1001,20 @@
       "cardNumber": 0,
       "cardCvv": 0,
       "id": 9
+    },
+    {
+      "firstName": "Raghav",
+      "lastName": "Rallan",
+      "email": "flashman2092@gmail.com",
+      "phoneNumber": "08198042151",
+      "name": "Sunset View Lodge",
+      "price": 220,
+      "checkInDate": "2023-12-19T18:30:00.000Z",
+      "checkOutDate": "2023-12-20T18:30:00.000Z",
+      "cardHolderName": "Raghav Rallan",
+      "cardNumber": 1111111111111,
+      "cardCvv": 122,
+      "id": 10
     }
   ]
 }
